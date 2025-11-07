@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang = "fr">
+    <head>
+        <meta charset = 'utf-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Azertype</title>
+        <link href = "style.css" rel = "stylesheet">
+        <script src = "config.js" defer></script>
+        <script src = "boucleJeu.js" defer></script>
+        <script src = "main.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Azertype</h1>
+            <h2>L'application pour écrire plus vite !</h2>
+            <h3>Azertype est une application en ligne pour apprendre à taper plus vite au clavier :)</h3>
+        </header>
+
+        <main>
+            <section class = "game_area">
+                <div class = "instructions">
+                    Choisissez votre option et tapez la proposition
+                    qui s'affiche dans le champ en dessous
+                </div>
+
+                <div class = "choices">
+                    <form action = "" method="get">
+                        <input type = "radio" name = "choice" id = "mots" value = "mots">
+                        <label for = "mots">Mots</label>
+
+                        <input type = "radio" name = "choice" id = "phrases" value = "phrases">
+                        <label for = "phrases">Phrases</label>
+                    </form>
+                </div>
+
+                <div class = "propositions">
+                        <input type = "text" name = "proposition" value = "Cachalot" title = "Mot ou phrase à taper">
+                </div>
+
+                <div class = "answers_and_validation_area">
+                    <form action = "" method = "get" class = "answers_area" id = "answers">
+                            <input type = "text" name = "answer" placeholder = "Tapez le mot porposé ici">
+                    </form>
+
+                    <button id = "validation">
+                        Valider
+                    </button>
+                </div>
+
+                <div class = "score">
+                    Votre score : <span>0/0</span>
+                </div>
+
+                <div class = "share_button">
+                    <button>
+                        Partager
+                    </button>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
